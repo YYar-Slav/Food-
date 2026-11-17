@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      Піддубцівський ліцей — Кулінарний апгрейд
+    </title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="index.html">
+        <img alt="Логотип ліцею" src="assets/school-logo.png"/>
+        <span class="brand-copy">
+          <small>
+            ПІДДУБЦІВСЬКИЙ ЛІЦЕЙ
+          </small>
+          <b>
+            КУЛІНАРНИЙ АПГРЕЙД
+          </b>
+        </span>
+      </a>
+      <nav id="nav">
+        <a class="active" href="index.html">
+          Головна
+        </a>
+        <a class="" href="index.html#menu">
+          Меню
+        </a>
+        <a class="" href="dishes.html">
+          Каталог страв
+        </a>
+        <a class="" href="game.html">
+          Гра
+        </a>
+        <a href="feedback.html">Відгуки</a>
+      </nav>
+      <button class="navbtn" id="navbtn">
+        ☰
+      </button>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">
+            СМАК • БАЛАНС • ЗДОРОВ’Я
+          </div>
+          <h1>
+            Нове меню.
+            <br/>
+            <em>
+              Нові звички.
+            </em>
+          </h1>
+          <p>
+            Інтерактивний простір про сучасне шкільне харчування. Досліджуй меню, знайомся зі стравами та перевіряй свої знання у грі.
+          </p>
+          <a class="primary" href="#menu">
+            Переглянути меню
+            <b>
+              ↗
+            </b>
+          </a>
+          <div class="stats">
+            <div>
+              <strong>
+                4
+              </strong>
+              <small>
+                тижні меню
+              </small>
+            </div>
+            <div>
+              <strong>
+                57
+              </strong>
+              <small>
+                різних страв
+              </small>
+            </div>
+            <div>
+              <strong>
+                3
+              </strong>
+              <small>
+                вікові групи
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="orb orb1" aria-hidden="true"></div>
+          <div class="orb orb2" aria-hidden="true"></div>
+          <div class="hero-photo-wrap">
+            <img alt="Світле приміщення ліцею" class="hero-photo" src="assets/school-interior-enhanced.webp"/>
+          </div>
+        </div>
+      </section>
+      <section class="intro">
+        <div class="intro-copy">
+          <div class="eyebrow">
+            ПРО ІДЕЮ
+          </div>
+          <h2>
+            Шкільне харчування
+            <br/>
+            може бути
+            <em>
+              цікавим
+            </em>
+          </h2>
+          <p class="intro-description">
+            <strong>«Кулінарний апгрейд» у Піддубцівському ліцеї</strong> — це про смачну, корисну та сучасну шкільну їжу! Ми відкриваємо світ шкільного харчування по-новому: досліджуємо меню, знайомимося з різноманіттям продуктів, дізнаємося секрети збалансованого раціону та переконуємося, що корисна їжа може бути не лише поживною, а й смачною, цікавою та сучасною. Адже здорові харчові звички починаються зі школи! І у нас це вдається - діти у захваті!!!!
+          </p>
+        </div>
+        <img class="intro-photo" src="assets/culinary-upgrade.png" alt="Працівниці шкільної їдальні та учні Піддубцівського ліцею за обідом" width="1280" height="720" loading="lazy"/>
+      </section>
+      <section class="section" id="menu">
+        <div class="section-head menu-section-head">
+          <div>
+            <div class="eyebrow">
+              ДОСЛІДЖУЙ
+            </div>
+            <h2>
+              Що сьогодні
+              <em>
+                у меню?
+              </em>
+            </h2>
+          </div>
+          <div class="menu-chef">
+            <img src="assets/menu-chef.png" alt="Кухарка запрошує переглянути меню: дивіться вниз!" width="1216" height="875"/>
+          </div>
+        </div>
+        <div class="filters">
+          <div>
+            <label>
+              ТИЖДЕНЬ
+            </label>
+            <select id="week">
+              <option value="1">
+                1-й тиждень
+              </option>
+              <option value="2">
+                2-й тиждень
+              </option>
+              <option value="3">
+                3-й тиждень
+              </option>
+              <option value="4">
+                4-й тиждень
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="days" id="days">
+        </div>
+        <div class="menu-card">
+          <div class="menu-title">
+            <div>
+              <div class="eyebrow">
+                СНІДАНОК
+              </div>
+              <h3 id="daytitle">
+                Понеділок
+              </h3>
+            </div>
+            <span class="tag">
+              Осінь 2026
+            </span>
+          </div>
+          <div id="dishlist">
+          </div>
+          <div class="menu-total">
+            <span>
+              Загальна маса порцій
+            </span>
+            <strong id="total">
+              0 г
+            </strong>
+          </div>
+
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">
+              ЩЕ БІЛЬШЕ МОЖЛИВОСТЕЙ
+            </div>
+            <h2>
+              Дізнавайся та
+              <em>
+                грай
+              </em>
+            </h2>
+          </div>
+        </div>
+
+          <a class="quick-card" href="game.html">
+            <div class="visual">
+              🧠🌱
+            </div>
+            <div class="inside">
+              <h2>
+                Харчовий батл
+              </h3>
+              <p>
+                Перевір, наскільки добре ти знаєш принципи збалансованого харчування.
+              </p>
+            </div>
+          </a>
+      </section>
+      <section class="about">
+        <div class="about-copy">
+          <div class="eyebrow">
+            НАВІЩО ЦЕЙ ПРОЄКТ?
+          </div>
+          <h2>
+            Знати, що на тарілці, — означає <em>дбати про своє здоров’я!</em>
+          </h2>
+          <p>
+            У Піддубцівському ліцеї ми переконані: культура здорового харчування починається з усвідомленого вибору. 
+          
+            Ми прагнемо показати, що шкільне харчування — це не просто сніданок чи обід, а важлива складова здоров'я, гарного самопочуття, енергії та успішного навчання.
+          
+        Адже кожна тарілка — це маленький крок до великих звичок: харчуватися свідомо, обирати корисне та цінувати турботу про себе!</strong>
+          </p>
+        </div>
+        <img class="about-photo" src="assets/school-lunch-collage.png" alt="Учні Піддубцівського ліцею обідають у шкільній їдальні" width="1280" height="720" loading="lazy"/>
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <img alt="" src="assets/school-logo.png"/>
+        <span class="brand-copy">
+          <small>
+            ПІДДУБЦІВСЬКИЙ ЛІЦЕЙ
+          </small>
+          <b>
+            КУЛІНАРНИЙ АПГРЕЙД
+          </b>
+        </span>
+      </a>
+      <span>
+        Нові стандарти шкільного харчування
+      </span>
+      <a href="#">
+        На початок ↑
+      </a>
+    </footer>
+    <script src="menu-data.js">
+    </script>
+    <script src="site.js">
+    </script>
+  </body>
+</html>

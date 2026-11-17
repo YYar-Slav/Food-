@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Відгуки та зворотний зв’язок — Кулінарний апгрейд</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feedback.css">
+  </head>
+
+  <body>
+    <header class="top">
+      <a class="brand" href="index.html">
+        <img src="assets/school-logo.png" alt="Логотип ліцею">
+        <span class="brand-copy">
+          <small>ПІДДУБЦІВСЬКИЙ ЛІЦЕЙ</small>
+          <b>КУЛІНАРНИЙ АПГРЕЙД</b>
+        </span>
+      </a>
+
+      <nav id="nav">
+        <a href="index.html">Головна</a>
+        <a href="index.html#menu">Меню</a>
+        <a href="dishes.html">Каталог страв</a>
+        <a href="game.html">Гра</a>
+        <a class="active" href="feedback.html">Відгуки</a>
+      </nav>
+
+      <button class="navbtn" id="navbtn" aria-label="Відкрити меню">☰</button>
+    </header>
+
+    <main class="feedback-main">
+      <div class="eyebrow">ВАША ДУМКА ВАЖЛИВА</div>
+      <h1>Відгуки та <em>зворотний зв’язок</em></h1>
+      <p class="feedback-lead">
+        Поділіться враженнями про шкільне меню, запропонуйте ідею або залиште побажання.
+      </p>
+
+      <div class="feedback-layout">
+        <section class="feedback-panel">
+          <h2>Залишити відгук</h2>
+
+          <form id="feedback-form">
+            <label for="author">Ваше ім’я</label>
+            <input id="author" name="author" maxlength="60" placeholder="Як до вас звертатися?" required>
+
+            <label for="kind">Тема повідомлення</label>
+            <select id="kind" name="kind">
+              <option>Відгук про меню</option>
+              <option>Пропозиція</option>
+              <option>Запитання</option>
+              <option>Інше</option>
+            </select>
+
+            <label for="rating">Оцінка</label>
+            <select id="rating" name="rating">
+              <option value="5">★★★★★ — Чудово</option>
+              <option value="4">★★★★☆ — Добре</option>
+              <option value="3">★★★☆☆ — Нормально</option>
+              <option value="2">★★☆☆☆ — Можна краще</option>
+              <option value="1">★☆☆☆☆ — Не сподобалося</option>
+            </select>
+
+            <label for="message">Ваше повідомлення</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              maxlength="1200"
+              placeholder="Напишіть, що вам сподобалося або що варто покращити…"
+              required
+            ></textarea>
+
+            <button class="feedback-submit" type="submit">Залишити відгук ↗</button>
+            <p id="feedback-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="feedback-panel">
+          <div class="feedback-heading">
+            <h2>Відгуки відвідувачів</h2>
+            <span id="feedback-count">0</span>
+          </div>
+
+          <div id="feedback-list" class="feedback-list">
+            <p class="feedback-empty">Поки що немає відгуків. Будьте першими!</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="site.js"></script>
+    <script src="feedback.js"></script>
+  </body>
+</html>

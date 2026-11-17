@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      Харчовий батл — Піддубцівський ліцей
+    </title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="index.html">
+        <img alt="Логотип ліцею" src="assets/school-logo.png"/>
+        <span class="brand-copy">
+          <small>
+            ПІДДУБЦІВСЬКИЙ ЛІЦЕЙ
+          </small>
+          <b>
+            КУЛІНАРНИЙ АПГРЕЙД
+          </b>
+        </span>
+      </a>
+      <nav id="nav">
+        <a class="" href="index.html">
+          Головна
+        </a>
+        <a class="" href="index.html#menu">
+          Меню
+        </a>
+        <a class="" href="dishes.html">
+          Каталог страв
+        </a>
+        <a class="active" href="game.html">
+          Гра
+        </a>
+        <a href="feedback.html">Відгуки</a>
+      </nav>
+      <button class="navbtn" id="navbtn">
+        ☰
+      </button>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <div>
+            <div class="eyebrow">
+              ІНТЕРАКТИВНА ГРА
+            </div>
+            <h1>
+              Харчовий
+              <em>
+                батл
+              </em>
+            </h1>
+            <p>
+              Відповідай на запитання про продукти, поживні речовини та збалансоване харчування. Перевір свої знання!
+            </p>
+          </div>
+          <img alt="Логотип ліцею" class="mini-logo" src="assets/school-logo.png"/>
+        </div>
+      </section>
+      <section class="game-shell">
+        <div class="game-card" id="game">
+          <div class="question-count" id="counter">
+            ЗАПИТАННЯ 1 З 6
+          </div>
+          <div class="progress">
+            <span id="progress">
+            </span>
+          </div>
+          <div id="quiz">
+            <h2 class="question" id="question">
+            </h2>
+            <div class="answers" id="answers">
+            </div>
+            <div class="feedback" id="feedback">
+            </div>
+            <button class="primary next" hidden="" id="next">
+              Наступне запитання →
+            </button>
+          </div>
+          <div class="result" hidden="" id="result">
+            <div class="big">
+              🏆
+            </div>
+            <h2>
+              Гру завершено!
+            </h2>
+            <p id="score">
+            </p>
+            <button class="primary" id="restart">
+              Грати ще раз ↻
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <img alt="" src="assets/school-logo.png"/>
+        <span class="brand-copy">
+          <small>
+            ПІДДУБЦІВСЬКИЙ ЛІЦЕЙ
+          </small>
+          <b>
+            КУЛІНАРНИЙ АПГРЕЙД
+          </b>
+        </span>
+      </a>
+      <span>
+        Нові стандарти шкільного харчування
+      </span>
+      <a href="#">
+        На початок ↑
+      </a>
+    </footer>
+    <script src="game.js">
+    </script>
+  </body>
+</html>

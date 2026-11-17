@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      Каталог страв — Піддубцівський ліцей
+    </title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="index.html">
+        <img alt="Логотип ліцею" src="assets/school-logo.png"/>
+        <span class="brand-copy">
+          <small>
+            ПІДДУБЦІВСЬКИЙ ЛІЦЕЙ
+          </small>
+          <b>
+            КУЛІНАРНИЙ АПГРЕЙД
+          </b>
+        </span>
+      </a>
+      <nav id="nav">
+        <a class="" href="index.html">
+          Головна
+        </a>
+        <a class="" href="index.html#menu">
+          Меню
+        </a>
+        <a class="active" href="dishes.html">
+        Каталог страв
+        </a>
+        <a class="" href="game.html">
+          Гра
+        </a>
+        <a href="feedback.html">Відгуки</a>
+      </nav>
+      <button class="navbtn" id="navbtn">
+        ☰
+      </button>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="wrap">
+          <div>
+            <div class="eyebrow">
+              КАТАЛОГ СМАКІВ
+            </div>
+            <h1>
+              Наші
+              <em>
+                страви
+              </em>
+            </h1>
+            <p>
+              Переглядай фотографії страв зі шкільного меню.
+            </p>
+          </div>
+          <img alt="Логотип ліцею" class="mini-logo" src="assets/school-logo.png"/>
+        </div>
+      </section>
+      <section class="section" id="catalog">
+        <div class="catalog-tools">
+          <div>
+            <div class="eyebrow">
+              ЗНАЙДИ СВОЮ СТРАВУ
+            </div>
+            <h2>
+              Каталог
+              <em>
+                страв
+              </em>
+            </h2>
+          </div>
+          <input class="search" id="search" placeholder="Пошук страви..." type="search"/>
+        </div>
+        <div class="dish-grid" id="dishgrid">
+        </div>
+
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="index.html">
+        <img alt="" src="assets/school-logo.png"/>
+        <span class="brand-copy">
+          <small>
+            ПІДДУБЦІВСЬКИЙ ЛІЦЕЙ
+          </small>
+          <b>
+            КУЛІНАРНИЙ АПГРЕЙД
+          </b>
+        </span>
+      </a>
+      <span>
+        Нові стандарти шкільного харчування
+      </span>
+      <a href="#">
+        На початок ↑
+      </a>
+    </footer>
+    <script src="menu-data.js">
+    </script>
+    <script src="dishes.js">
+    </script>
+  </body>
+</html>
